@@ -10,7 +10,7 @@ from transformers import pipeline
 from tensorflow.keras.models import Model
 
 # Excel dosyasını oku
-df = pd.read_excel('C:/Users/Elitebook/Desktop/makine_ogrenme/tesla_100_x.xlsx', engine='openpyxl')
+df = pd.read_excel('C:/Users/Pc/Desktop/makine_ogrenme/tesla_100_x.xlsx', engine='openpyxl')
 
 # Duygu analizi yapılacak sütun adını belirtin (ör: 'yorum')
 text_column = "Yorum"
@@ -31,5 +31,5 @@ for text in df[text_column]:
 df["duygu"] = results
 
 # Sonuçları yeni bir Excel dosyasına kaydet
-df.to_excel("C:/Users/Elitebook/Desktop/makine_ogrenme/duygu_analiz_sonuclari.xlsx", index=False)
+df.to_excel("C:/Users/Pc/Desktop/makine_ogrenme/duygu_analiz_sonuclari.xlsx", index=False)
 print("Duygu analizi tamamlandı ve sonuçlar duygu_analiz_sonuclari.xlsx dosyasına kaydedildi.")
