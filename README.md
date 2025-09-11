@@ -1,0 +1,2 @@
+# duyguanalizi
+duygu analizi
